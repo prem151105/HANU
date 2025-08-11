@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anurag Jayaswal - Terminal Portfolio Preview</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            background: #000000;
+            color: #00ff00;
+            font-family: 'Courier New', monospace;
+            line-height: 1.6;
+            overflow-x: auto;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .terminal {
+            background: linear-gradient(135deg, #000000 0%, #0a0a0a 100%);
+            border: 2px solid #00ff00;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 0 20px rgba(0, 255, 0, 0.3);
+        }
+        
+        .ascii-art {
+            color: #00ff00;
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 12px;
+            line-height: 1;
+            text-shadow: 0 0 10px rgba(0, 255, 0, 0.8);
+        }
+        
+        .prompt {
+            color: #00ff00;
+            display: inline;
+        }
+        
+        .command {
+            color: #ffffff;
+            display: inline;
+        }
+        
+        .output {
+            color: #00ff00;
+            margin: 10px 0;
+            white-space: pre-wrap;
+        }
+        
+        .section-title {
+            color: #00ffff;
+            font-weight: bold;
+            text-decoration: underline;
+            margin: 20px 0 10px 0;
+        }
+        
+        .highlight {
+            color: #ffff00;
+        }
+        
+        .error {
+            color: #ff0000;
+        }
+        
+        .success {
+            color: #00ff00;
+        }
+        
+        .info {
+            color: #00ffff;
+        }
+        
+        .cursor {
+            animation: blink 1s infinite;
+        }
+        
+        @keyframes blink {
+            0%, 50% { opacity: 1; }
+            51%, 100% { opacity: 0; }
+        }
+        
+        .section {
+            margin-bottom: 30px;
+        }
+        
+        @media (max-width: 768px) {
+            .ascii-art {
+                font-size: 8px;
+                transform: scale(0.8);
+            }
+            .container {
+                padding: 10px;
+            }
+            .terminal {
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="terminal">
+            <!-- ASCII Banner -->
+            <div class="ascii-art">
+ █████╗ ███╗   ██╗██╗   ██╗██████╗  █████╗  ██████╗ 
+██╔══██╗████╗  ██║██║   ██║██╔══██╗██╔══██╗██╔════╝ 
+███████║██╔██╗ ██║██║   ██║██████╔╝███████║██║  ███╗
+██╔══██║██║╚██╗██║██║   ██║██╔══██╗██╔══██║██║   ██║
+██║  ██║██║ ╚████║╚██████╔╝██║  ██║██║  ██║╚██████╔╝
+╚═╝  ╚═╝╚═╝  ╚═══╝ ╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═╝ ╚═════╝
+
+            Welcome to Anurag Jayaswal's Interactive Portfolio
+            AI/ML Developer | Software Engineer | Competitive Programmer
+            </div>
+
+            <!-- Terminal Session -->
+            <div class="section">
+                <div><span class="prompt">visitor@anurag-portfolio:~$ </span><span class="command">help</span></div>
+                <div class="output">
+<span class="section-title">ANURAG TERMINAL HELP SYSTEM</span>
+<span class="highlight">=========================================</span>
+
+<span class="info">BASIC COMMANDS:</span>
+  about           Display personal information and bio
+  education       Show educational background  
+  experience      Display work experience
+  projects        List all projects with descriptions
+  skills          Show technical skills and proficiency
+  achievements    Display coding achievements and ratings
+  contact         Show contact information
+
+<span class="info">AI/ML SPECIFIC:</span>
+  ai-projects     Show AI/ML projects specifically
+  ml-skills       Display machine learning skills
+  neural-net      Show neural network visualization
+  transformers    Display transformer model work
+
+<span class="info">CODING PLATFORMS:</span>
+  leetcode        Show LeetCode statistics
+  codeforces      Show Codeforces profile
+  coding-stats    Show overall coding statistics
+
+<span class="info">INTERACTIVE & FUN:</span>
+  snake           Play snake game
+  typing          Start typing test game
+  matrix          Matrix rain animation
+  theme <name>    Change terminal theme
+                </div>
+            </div>
+
+            <div class="section">
+                <div><span class="prompt">visitor@anurag-portfolio:~$ </span><span class="command">about</span></div>
+                <div class="output">
+<span class="section-title">ABOUT ANURAG JAYASWAL</span>
+<span class="highlight">=====================================</span>
+
+<span class="info">Name:</span>        Anurag Jayaswal
+<span class="info">Location:</span>    Gwalior, Madhya Pradesh
+<span class="info">Email:</span>       aj7879219119@gmail.com
+<span class="info">Phone:</span>       +91-7879219119
+
+<span class="info">BIOGRAPHY:</span>
+Passionate AI/ML Developer and Software Engineer with expertise in 
+building intelligent systems. Currently pursuing B.Tech in Computer 
+Science & Engineering at IIIT Bhagalpur. Specialized in multi-agent 
+LLM systems, NLP, and competitive programming.
+
+<span class="info">CURRENT FOCUS:</span>
+• Building intelligent AI/ML systems
+• Developing multi-agent LLM applications
+• Competitive programming and algorithmic problem solving
+• Open source contributions and community building
+
+<span class="success">STATUS:</span> Currently available for new opportunities!
+                </div>
+            </div>
+
+            <div class="section">
+                <div><span class="prompt">visitor@anurag-portfolio:~$ </span><span class="command">achievements</span></div>
+                <div class="output">
+<span class="section-title">ACHIEVEMENTS & RATINGS</span>
+<span class="highlight">====================================</span>
+
+<span class="info">COMPETITIVE PROGRAMMING:</span>
+
+<span class="success">LeetCode:</span>
+  Problems Solved: <span class="highlight">250+</span>
+  Rating: <span class="highlight">1500+</span>
+  Rank: <span class="highlight">Expert Level</span>
+
+<span class="success">Codeforces:</span>
+  Max Rating: <span class="highlight">1468</span>
+  Current Rating: <span class="highlight">1450</span>
+  Rank: <span class="highlight">Specialist</span>
+  Contests: <span class="highlight">25+</span>
+  Problems Solved: <span class="highlight">300+</span>
+
+<span class="success">CodeChef:</span>
+  Stars: <span class="highlight">2-Star</span>
+  Max Rating: <span class="highlight">1650</span>
+  Best Global Rank: <span class="highlight">#11</span> in Contest 164 Div 2
+  Problems Solved: <span class="highlight">150+</span>
+                </div>
+            </div>
+
+            <div class="section">
+                <div><span class="prompt">visitor@anurag-portfolio:~$ </span><span class="command">projects</span></div>
+                <div class="output">
+<span class="section-title">MY PROJECTS</span>
+<span class="highlight">============================</span>
+
+<span class="success">1. ResuRank</span> <span class="info">[Completed]</span>
+   Period:      Jan-Mar 2025
+   Type:        AI/ML Project
+   Description: AI-powered Resume Ranking System using advanced NLP
+
+   Key Features:
+     • Automated resume parsing and analysis
+     • Intelligent skill matching algorithms  
+     • TF-IDF based content scoring
+     • Transformer models for semantic understanding
+     • RESTful API with FastAPI
+
+   Technologies: Python, NLP, Transformers, TF-IDF, Scikit-learn, FastAPI
+
+<span class="success">2. AI News Hound</span> <span class="info">[Completed]</span>
+   Period:      Jul-Aug 2024
+   Type:        AI/ML Project
+   Description: Automated news compilation system with intelligent curation
+
+   Key Features:
+     • Automated news scraping from multiple sources
+     • LangChain-powered content processing
+     • Intelligent content summarization
+     • Topic-based categorization
+
+   Technologies: Python, LangChain, Tavily API, OpenAI, BeautifulSoup, FastAPI
+                </div>
+            </div>
+
+            <div class="section">
+                <div><span class="prompt">visitor@anurag-portfolio:~$ </span><span class="command">contact</span></div>
+                <div class="output">
+<span class="section-title">CONTACT INFORMATION</span>
+<span class="highlight">===============================</span>
+
+📧 <span class="info">Email:</span>      aj7879219119@gmail.com
+📱 <span class="info">Phone:</span>      +91-7879219119  
+📍 <span class="info">Location:</span>   Gwalior, Madhya Pradesh
+
+🌐 <span class="info">PROFESSIONAL PROFILES:</span>
+<span class="success">LinkedIn:</span>      https://linkedin.com/in/anurag-jayaswal
+<span class="success">GitHub:</span>        https://github.com/anuragj7879
+
+💻 <span class="info">CODING PROFILES:</span>
+<span class="success">LeetCode:</span>      https://leetcode.com/anuragj7879
+<span class="success">Codeforces:</span>    https://codeforces.com/profile/anuragj7879
+<span class="success">GeeksforGeeks:</span> https://auth.geeksforgeeks.org/user/anuragj7879
+
+🚀 <span class="info">CURRENTLY LOOKING FOR:</span>
+• Full-time Software Engineer positions
+• AI/ML Engineer roles  
+• Research internships
+• Open source collaborations
+                </div>
+            </div>
+
+            <div class="section">
+                <div><span class="prompt">visitor@anurag-portfolio:~$ </span><span class="cursor">_</span></div>
+            </div>
+
+            <!-- Note about full experience -->
+            <div class="section">
+                <div class="output">
+<span class="highlight">==========================================</span>
+<span class="info">NOTE:</span> This is a static preview of the terminal portfolio.
+
+The full interactive version includes:
+• 50+ terminal commands
+• Interactive games (Snake, Typing Test)
+• Matrix rain animations  
+• 6 different terminal themes
+• Command history and autocomplete
+• Keyboard shortcuts
+• Mobile responsive design
+
+<span class="success">To run the full interactive version:</span>
+1. Install Node.js (https://nodejs.org/)
+2. Navigate to the project directory
+3. Run: npm install
+4. Run: npm run dev
+5. Open: http://localhost:3000
+
+<span class="highlight">==========================================</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
