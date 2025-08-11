@@ -15,10 +15,8 @@ import LiveGitHubStats from '@/components/LiveGitHubStats'
 import InteractiveTimeline from '@/components/InteractiveTimeline'
 import VoiceAssistant from '@/components/VoiceAssistant'
 import CodePlayground from '@/components/CodePlayground'
-import { portfolioData } from '@/data/portfolioData'
-
 export default function Home() {
-  const [voiceEnabled, setVoiceEnabled] = useState(true)
+  const [voiceEnabled] = useState(true)
 
   // Timeline data
   const timelineEvents = [
@@ -540,7 +538,7 @@ Visualizations created successfully!`,
     }
   ]
 
-  const handleVoiceCommand = (command: string, data: any) => {
+  const handleVoiceCommand = (command: string, data: unknown) => {
     console.log('Voice command received:', command, data)
     // Handle voice commands here
   }

@@ -97,7 +97,8 @@ export default function About() {
             >
               {portfolioData.achievements.map((achievement, index) => (
                 <div key={index} className="px-4 py-2 bg-gradient-to-r from-blue-600/20 to-purple-600/20 rounded-full border border-blue-500/30 text-sm text-blue-300">
-                  {achievement.split(':')[0]}
+                  <span className="mr-2">{achievement.icon}</span>
+                  {achievement.title}
                 </div>
               ))}
             </motion.div>
