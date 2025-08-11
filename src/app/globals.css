@@ -354,7 +354,7 @@ body {
 
 /* Project card enhancements */
 .project-card {
-  @apply relative h-full p-8 bg-gradient-to-br from-slate-800 to-slate-900 rounded-xl border border-gray-700/30 backdrop-blur-sm overflow-hidden group;
+  @apply relative h-full p-8 bg-gradient-to-br from-slate-800 to-slate-900 rounded-xl border border-gray-700/30 backdrop-blur-sm overflow-hidden;
 }
 
 .project-card::before {
