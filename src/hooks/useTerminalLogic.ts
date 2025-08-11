@@ -19,11 +19,6 @@ export function useTerminalLogic() {
   const [suggestions, setSuggestions] = useState<string[]>([])
   const [currentInput, setCurrentInput] = useState('')
 
-  const systemInfo = {
-    os: 'Portfolio Terminal v1.0',
-    version: '1.0.0'
-  }
-
   // Enhanced real-time suggestions with partial matching
   const updateSuggestions = useCallback((input: string) => {
     setCurrentInput(input)
@@ -215,7 +210,6 @@ export function useTerminalLogic() {
   return {
     history,
     commandHistory,
-    systemInfo,
     executeCommand,
     showSuggestions,
     suggestions,

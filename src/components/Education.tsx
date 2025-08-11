@@ -76,12 +76,14 @@ export default function Education() {
                         </span>
                       </div>
                       
-                      {'cgpa' in edu && (
+                      {'cgpa' in edu && edu.cgpa && (
                         <div className="flex-1 max-w-32">
                           <div className="w-full bg-gray-700 rounded-full h-2">
                             <div 
                               className="h-2 bg-gradient-to-r from-green-400 to-blue-500 rounded-full"
-                              style={{ width: `${(parseFloat(edu.cgpa.split('/')[0]) / parseFloat(edu.cgpa.split('/')[1])) * 100}%` }}
+                              style={{ 
+                                width: `${(parseFloat((edu as any).cgpa.split('/')[0]) / parseFloat((edu as any).cgpa.split('/')[1])) * 100}%` 
+                              }}
                             ></div>
                           </div>
                         </div>

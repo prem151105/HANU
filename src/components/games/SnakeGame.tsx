@@ -16,7 +16,7 @@ const INITIAL_SNAKE = [{ x: 10, y: 10 }]
 const INITIAL_FOOD = { x: 15, y: 15 }
 const INITIAL_DIRECTION = { x: 0, y: -1 }
 
-export default function SnakeGame({ onClose }: SnakeGameProps) {
+export default function SnakeGame({}: SnakeGameProps) {
   const [snake, setSnake] = useState<Position[]>(INITIAL_SNAKE)
   const [food, setFood] = useState<Position>(INITIAL_FOOD)
   const [direction, setDirection] = useState<Position>(INITIAL_DIRECTION)

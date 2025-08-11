@@ -44,7 +44,7 @@ const MovingSkillsBands: React.FC<MovingSkillsBandsProps> = ({ className = '' })
   const middleRowSkills = [...skills.slice(7, 14), ...skills.slice(7, 14), ...skills.slice(7, 14)]
   const bottomRowSkills = [...skills.slice(14), ...skills.slice(14), ...skills.slice(14)]
 
-  const SkillItem: React.FC<{ skill: Skill; index: number }> = ({ skill, index }) => (
+  const SkillItem: React.FC<{ skill: Skill; index: number }> = ({ skill }) => (
     <motion.div
       className="flex-shrink-0 mx-3 md:mx-4 group cursor-pointer"
       whileHover={{ 

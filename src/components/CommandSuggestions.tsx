@@ -41,11 +41,9 @@ const commandDetails: Record<string, CommandInfo> = {
 
 export default function CommandSuggestions({ suggestions, onSelect, currentInput }: CommandSuggestionsProps) {
   const [selectedIndex, setSelectedIndex] = useState(0)
-  const [showDetails, setShowDetails] = useState(false)
 
   useEffect(() => {
     setSelectedIndex(0)
-    setShowDetails(false)
   }, [suggestions])
 
   useEffect(() => {

@@ -68,7 +68,7 @@ const FloatingSkillsAnimation: React.FC<FloatingSkillsAnimationProps> = ({
     skillsToShow = skillsToShow.slice(0, 12) // Show moderate amount on tablet
   }
 
-  const generateRandomPath = (index: number) => {
+  const generateRandomPath = () => {
     // Responsive margins based on screen size
     const margin = isMobile ? 50 : isTablet ? 75 : 100
     const safeWidth = Math.max(300, windowSize.width - margin * 2)
@@ -102,7 +102,7 @@ const FloatingSkillsAnimation: React.FC<FloatingSkillsAnimationProps> = ({
   return (
     <div className={`fixed inset-0 pointer-events-none overflow-hidden z-0 ${className}`}>
       {skillsToShow.map((skill, index) => {
-        const path = generateRandomPath(index)
+        const path = generateRandomPath()
         // Responsive sizing based on screen size
         const baseSize = isMobile ? 30 : isTablet ? 35 : 40
         const sizeVariation = isMobile ? 20 : isTablet ? 25 : 40

@@ -1,5 +1,4 @@
 import { portfolioData } from '@/data/portfolioData'
-import { commands, commandCategories } from '@/data/commands'
 
 const colors = {
   primary: '<span class="text-cyan-400">',

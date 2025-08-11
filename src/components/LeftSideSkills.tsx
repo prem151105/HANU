@@ -2,7 +2,6 @@
 
 import React from 'react'
 import { motion } from 'framer-motion'
-import { portfolioData } from '@/data/portfolioData'
 
 const LeftSideSkills: React.FC = () => {
   // Create a focused set of key skills for the left sidebar

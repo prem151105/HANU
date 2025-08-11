@@ -30,7 +30,7 @@ export default function BootSequence({ onComplete }: BootSequenceProps) {
       }, 400) // Shorter final delay
       return () => clearTimeout(finalTimeout)
     }
-  }, [currentStep, onComplete])
+  }, [currentStep, onComplete, bootSteps.length])
 
   if (isComplete) return null
 

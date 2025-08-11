@@ -17,7 +17,6 @@ export default function Terminal() {
   const {
     history,
     commandHistory,
-    systemInfo,
     executeCommand,
     showSuggestions,
     suggestions,
@@ -51,7 +50,7 @@ export default function Terminal() {
     updateSuggestions('')
     setHistoryIndex(-1)
     setIsTyping(false)
-  }, [input, executeCommand])
+  }, [input, executeCommand, updateSuggestions])
 
   // Handle key events
   const handleKeyDown = useCallback((e: React.KeyboardEvent) => {

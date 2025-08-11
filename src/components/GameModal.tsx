@@ -8,10 +8,9 @@ import TypingGame from './games/TypingGame'
 interface GameModalProps {
   gameType: 'snake' | 'typing'
   onClose: () => void
-  theme: any
 }
 
-export default function GameModal({ gameType, onClose, theme }: GameModalProps) {
+export default function GameModal({ gameType, onClose }: GameModalProps) {
   const [isVisible, setIsVisible] = useState(true)
 
   const handleClose = useCallback(() => {

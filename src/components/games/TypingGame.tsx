@@ -86,7 +86,7 @@ public:
   }
 ]
 
-export default function TypingGame({ onClose }: TypingGameProps) {
+export default function TypingGame({}: TypingGameProps) {
   const [currentSample, setCurrentSample] = useState(0)
   const [userInput, setUserInput] = useState('')
   const [currentIndex, setCurrentIndex] = useState(0)
